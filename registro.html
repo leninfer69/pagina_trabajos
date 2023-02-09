@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Registrarse</title>
+</head>
+
+<body>
+
+
+
+    
+    <div class="container">
+        <div class="form-image">
+            <img src="img/FontObjt.png">
+        </div>
+        <div class="form">
+            <form action="registro.php"  method="POST" >
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Registro</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre</label>
+                        <input id="firstname" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Apellido</label>
+                        <input id="lastname" type="text" name="apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cedula">Cedula</label>
+                        <input id="cedula" type="text" name="cedula" placeholder="Ingrese su cedula" required>
+                    </div>
+
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Genero</h6>
+                        </div>
+    
+                        <div class="gender-group">
+                            <select name="genero">
+                                <option value="value0">Selecciona una opción</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otro">Otro</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Ingrese su e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xxx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Contraseña</label>
+                        <input id="password" type="password" name="password" placeholder="*********" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme su contraseña</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="*********" required>
+                    </div>
+
+                </div>
+
+
+
+                <div class="continue-button">
+                    <button onclick="alerta()"><a href="#">Continuar</a> </button>
+                    
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
